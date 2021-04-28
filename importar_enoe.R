@@ -26,7 +26,7 @@
             
             else{
                 
-                ano <- paste0(bases,"/", year)
+                ano <- paste0(directorio,"/", year)
                 ano_folder <- dir.create(ano)
                     
                 for(trim in trimestres){
@@ -53,7 +53,7 @@
                         trimestre_folder <- dir.create(trimestre)
     
                         date <- paste0(year,"trim",trim,"_",extension,".zip")
-                        file <- paste0(bases,"/", date)
+                        file <- paste0(directorio,"/", date)
                         url <- paste0("https://www.inegi.org.mx/contenidos/programas/enoe/15ymas/microdatos/",date)
                         download.file(url = url, destfile = file)
                         unzip(file, exdir = trimestre)
