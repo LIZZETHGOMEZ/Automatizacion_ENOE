@@ -41,7 +41,10 @@
      
     bases <- "C:/Users/GOMEZ/Documents/base_enoe" # 1. MODIFICAR ESTE DORECTORIO
     source(paste0(bases,"/importar_enoe.R")) # llamamos a la funcion
-    importar_enoe(bases, 2017:2019) # 3.MODIFICAR ANOS DE INTERES (trimestres y extension son opcionales)
+    importar_enoe(bases, 2017:2019) # 3.MODIFICAR ANOS DE INTERES 
+    
+    # (trimestres y extension son opcionales y quedaria como sigue:
+    # importar_enoe(bases, c(2005,2008:2010), 1:4, "dta")
     
     # Para revisar los parametros de la funcion a mayor detalle y la funcion misma
     # ejecutar el siguiente codigo:
