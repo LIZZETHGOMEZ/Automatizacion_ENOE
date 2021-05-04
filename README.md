@@ -6,7 +6,7 @@ Por ahora el repositorio cuenta con la **automatizacion de la descarga de la ENO
 Para ello se creo una función llamada **"importar_enoe.R"** la cual permite seleccionar los años de interés, los trimestres de interés y hasta la extensión del archivo a importar (dta, dbf, csv, sav).
 Por default la función descarga los cuatro trimestres y la extensión "dta" que es un archivo para STATA (Está claro que estos parametros son modificables).
 
-### Instrucciones:
+## Instrucciones:
 1. Descargue el repositorio que contiene los dos archivos: [funcion_enoe.R](https://github.com/LIZZETHGOMEZ/Automatizacion_ENOE/blob/main/funcion_enoe.R) e [importar_enoe.R](https://github.com/LIZZETHGOMEZ/Automatizacion_ENOE/blob/main/importar_enoe.R)
 2. Ubique un solo directorio donde desea guardar las bases de la ENOE y en ese mismo directorio añada el archivo [importar_enoe.R](https://github.com/LIZZETHGOMEZ/Automatizacion_ENOE/blob/main/importar_enoe.R)
 3. Siga las intrucciones del codigo [funcion_enoe.R](https://github.com/LIZZETHGOMEZ/Automatizacion_ENOE/blob/main/funcion_enoe.R)
