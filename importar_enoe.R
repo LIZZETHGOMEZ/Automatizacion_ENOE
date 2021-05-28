@@ -31,7 +31,7 @@
                     
                 for(trim in trimestres){
         
-                    # Este condicional es para usar la ETOE
+                    # Este condicional aplica sobre la ETOE
                     if(year == 2020 & trim ==2){
                         print("Periodo de Pandemia, por lo que la encuesta para 
                               este trimestre del año es la ETOE cuya extensión es .DBF")
@@ -51,8 +51,16 @@
                     else{
                         trimestre <- paste0(ano,"/",trim)
                         trimestre_folder <- dir.create(trimestre)
-    
-                        date <- paste0(year,"trim",trim,"_",extension,".zip")
+                        
+                        # PARA ENOE_N
+                        if((year == 2020 & trim >= 3) | ( year >= 2021)){
+                          date <- paste0("enoe_n_",year,"_trim",trim,"_",extension,".zip")
+                        }
+                        
+                        else{
+                          date <- paste0(year,"trim",trim,"_",extension,".zip")
+                        }
+                      
                         file <- paste0(directorio,"/", date)
                         url <- paste0("https://www.inegi.org.mx/contenidos/programas/enoe/15ymas/microdatos/",date)
                         download.file(url = url, destfile = file)
@@ -64,3 +72,8 @@
             }
         }
     }
+    
+    
+    
+    
+    
